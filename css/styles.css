@@ -2,6 +2,8 @@ body {
   margin: 0 10% 0 15%;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  background-color: #2a2a2a;
+  color: #cacaca;
 }
 
 .name {
@@ -39,7 +41,8 @@ nav {
  display: flex;
  justify-content: flex-start;
  align-items: center;
- color: #2E2E2E;
+ /*color: #2E2E2E;*/
+ color: #fff;
  text-decoration: none;
  font-size: 20px;
  position: relative;
@@ -98,29 +101,47 @@ nav {
 
 .project1,
 .project2,
-.project3 {
+.project3,
+.project4,
+.project5,
+.project6 {
   width: 33.33%;
   transform: translate(0, 5%);
   transition: all 0.5s ease;
   flex-direction: column;
+  opacity: 80%;
 }
 
-.project-name {
+.project1,
+.project2,
+.project3 {
+  padding-bottom: 2%;
+}
+
+/*.project-name {
   padding-right: 17.5%;
   text-align: center;
-}
+}*/
 
 .project1:hover,
 .project2:hover,
-.project3:hover {
+.project3:hover,
+.project4:hover,
+.project5:hover,
+.project6:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
+  opacity: 100%;
 }
 
 .project-preview1,
 .project-preview2,
-.project-preview3 {
+.project-preview3,
+.project-preview4,
+.project-preview5,
+.project-preview6 {
   width: 85%;
-  box-shadow: 5px 5px 5px #808080;
+  border: 2px solid #fff;
+  /*box-shadow: 5px 5px 5px #808080;*/
 }
